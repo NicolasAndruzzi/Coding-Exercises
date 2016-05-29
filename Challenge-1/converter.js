@@ -8,7 +8,7 @@
 
 //Use a prompt() on the web to get input
 //Allow input to only take numbers and decimal places, no commas or $ or anything else
-var input = 99
+var input = 99.99
 var num = input.toFixed(2).toString();
 
 function convert(value) {
@@ -31,11 +31,6 @@ function convert(value) {
   }
   else{
     for (var i = 0; i <= numberValue.length - 1; i++) {
-      // numberValue[i]
-      // console.log(numberValue);
-      // console.log(numberValue.length-1);
-      // console.log(i);
-      // console.log(numberValue[i]);
       if (i === 0) {
         englishNumber.push(prefixWords[numberValue[i]])
       }
@@ -45,8 +40,30 @@ function convert(value) {
     }
   }
 
+// --------------------------- DECIMAL ---------------------------
+
+  if (decimalValue == 0) {
+    englishDecimal.push('zero')
+  }
+  else if (decimalValue <= 19) {
+    englishDecimal.push(baseWords[decimalValue])
+  }
+  else{
+    for (var i = 0; i <= decimalValue.length - 1; i++) {
+      if (i === 0) {
+        englishDecimal.push(prefixWords[decimalValue[i]])
+      }
+      if (i === 1) {
+        englishDecimal.push(baseWords[decimalValue[i]])
+      }
+    }
+  }
+
+// --------------------------- DECIMAL ---------------------------
+
+
   // console.log(englishDecimal);
-  return englishNumber.join('-') + englishDecimal.join('');
+  return englishNumber.join('-') + ' dollars and ' + englishDecimal.join('-') + ' cents';
 }
 
 console.log(convert(num));
