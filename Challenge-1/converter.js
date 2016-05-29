@@ -12,10 +12,10 @@
 //Allow input to only take numbers and decimal places, no commas or $ or anything else
 //Only allow 2 decimal places in entry field .999 or more causing errors currently
 var input = 9999999999999.99
-console.log(input);
+// console.log(input);
 // var num = input.toString();
 var num = input.toFixed(2).toString();
-console.log(num);
+// console.log(num);
 // var num = Math.floor(input * 100) / 100;
 // console.log(num);
 // var num = num.toString();
