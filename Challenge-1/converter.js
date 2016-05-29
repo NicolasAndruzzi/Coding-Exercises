@@ -6,9 +6,12 @@
 // to "Two thousand five hundred twenty-three and 04/100dollars"
 
 
+// !!!!!!Currently working for all numbers without rounding errors for all numbers under 10 trillion (9999999999999.99 and less)!!!!!!
+
 //Use a prompt() on the web to get input
 //Allow input to only take numbers and decimal places, no commas or $ or anything else
-var input = 9909999999.05
+//Only allow 2 decimal places in entry field .999 or more causing errors currently
+var input = 9999999999999.99
 console.log(input);
 // var num = input.toString();
 var num = input.toFixed(2).toString();
