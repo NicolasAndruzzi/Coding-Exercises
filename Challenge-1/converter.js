@@ -8,8 +8,14 @@
 
 //Use a prompt() on the web to get input
 //Allow input to only take numbers and decimal places, no commas or $ or anything else
-var input = 100030001.00
+var input = 9909999999.05
+console.log(input);
+// var num = input.toString();
 var num = input.toFixed(2).toString();
+console.log(num);
+// var num = Math.floor(input * 100) / 100;
+// console.log(num);
+// var num = num.toString();
 
 function convert(value) {
   var split = value.split('.');
@@ -56,10 +62,10 @@ function convert(value) {
                 englishDouble.push('-');
               }
             }
-            else if (j === 2 && pieceValue[i][j] != 0) {
-              englishDouble.push(baseWords[pieceValue[i][j]]);
-            }
-            }
+          }
+          else if (j === 2 && pieceValue[i][j] != 0 && pieceValue[i][j-1] >= 2) {
+            englishDouble.push(baseWords[pieceValue[i][j]]);
+          }
         }
         if (englishDouble != '') {
           englishPiece.push(englishDouble.join(''));
@@ -100,7 +106,7 @@ function convert(value) {
 
 
 // --------------------------- DECIMAL ---------------------------
-
+console.log(decimalValue);
   if (decimalValue == 0) {
     englishDecimal.push('zero')
   }
@@ -111,6 +117,9 @@ function convert(value) {
     for (var i = 0; i <= decimalValue.length - 1; i++) {
       if (i === 0) {
         englishDecimal.push(prefixWords[decimalValue[i]])
+        if (decimalValue[i+1] != 0) {
+          englishDecimal.push('-');
+        }
       }
       if (i === 1) {
         englishDecimal.push(baseWords[decimalValue[i]])
@@ -121,7 +130,7 @@ function convert(value) {
 // --------------------------- DECIMAL ---------------------------
 
 
-  return englishNumber.reverse().join(' ') + ' dollars and ' + englishDecimal.join('-') + ' cents';
+  return englishNumber.reverse().join(' ') + ' dollars and ' + englishDecimal.join('') + ' cents';
 }
 
 console.log(convert(num));
