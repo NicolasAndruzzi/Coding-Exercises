@@ -10,7 +10,8 @@
 }
 
 #canvas{
-  width: 95vw;
-  height: 95vh;
-  border: 1px solid black;
+  width: 98vw;
+  height: 98vh;
+  border: 5px solid black;
+  overflow: auto;
 }
