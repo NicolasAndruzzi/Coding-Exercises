@@ -269,6 +269,10 @@
   text-shadow: 0 0 5px black;
 }
 
+#challenge2Container input{
+  margin: 1vw;
+}
+
 #challenge2English{
   margin-top: 3vh;
   color: red;
