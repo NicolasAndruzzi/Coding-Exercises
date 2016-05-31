@@ -145,6 +145,7 @@
   color: black;
   text-shadow: 0 0 5px white;
   font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .33vw;
   animation-duration: 5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
@@ -176,6 +177,38 @@
 /**********************************************          Splash Page End          **********************************************/
 
 /**********************************************          Challenge1 Begin          **********************************************/
+
+#challenge1Container{
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+#challenge1Title{
+  font-size: 6vw;
+  margin-bottom: 1vh;
+}
+
+#challenge1Container input{
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 1vh;
+}
+
+#challenge1English{
+  margin-top: 2vh;
+  color: darkgreen;
+  font-size: 2vw;
+}
 
 
 
