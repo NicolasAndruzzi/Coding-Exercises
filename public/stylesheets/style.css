@@ -1,0 +1,115 @@
+*{
+  text-decoration: none;
+}
+
+/**********************************************          404 Page Begin          **********************************************/
+
+#errorLink{
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/404.jpg");
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: 85% bottom;
+  background-color: #E1EBEC;
+}
+
+#error{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background-color: green;*/
+  height: 21vw;
+  margin-top: 15vh;
+}
+
+#errorStatus{
+  color: #F91924;
+  font-size: 15vw;
+  /*background-color: blue;*/
+}
+
+#errorMessage{
+  font-size: 3vw;
+  /*background-color: red;*/
+}
+
+/**********************************************          404 Page End          **********************************************/
+
+/**********************************************          Splash Page Begin          **********************************************/
+
+#mainHeader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  /*background-color: black;
+  opacity: .85;*/
+  background-color: #333333;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link{
+  /*background-color: red;
+  border: 1px solid yellow;*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainHeader .link a{
+  color: lightgrey;
+  /*background-color: blue;*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3vw;
+  transition: all .75s;
+}
+
+#mainHeader .link a:hover{
+  color: white;
+  border: 1px solid white;
+  font-size: 4vw;
+  background-color: black;
+  opacity: 1;
+  font-weight: 900;
+  transition: all .25s;
+}
+
+#hero {
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("/images/hello_world_1600x900_wallpaper_Wallpaper HD_2560x1600_www.paperhi.com.jpg") no-repeat center center;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;*/
+  background-size: cover;
+  text-align: center;
+  background-color: white;
+}
+
+
+/**********************************************          Splash Page End          **********************************************/
