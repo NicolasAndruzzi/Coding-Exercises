@@ -108,6 +108,12 @@
   font-size: 2vw;
 }
 
+#home{
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 100;
+  /*color: darkgreen;*/
+}
+
 /**********************************************          Header Begin          **********************************************/
 
 /**********************************************          Splash Page Begin          **********************************************/
@@ -190,7 +196,6 @@
   justify-content: center;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-
 }
 
 #challenge1Title{
@@ -216,13 +221,64 @@
 
 /**********************************************          Challenge2 Begin          **********************************************/
 
+#challenge2Container{
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#challenge2Title{
+  font-size: 6vw;
+  margin-bottom: 1vh;
+}
+
+#challenge2English{
+  margin-top: 2vh;
+  color: darkgreen;
+  font-size: 2vw;
+}
 
 
 /**********************************************          Challenge2 End          **********************************************/
 
 /**********************************************          Challenge3 Begin          **********************************************/
 
+#challenge3Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  width: 100vw;
+  height: 90vh;
+}
 
+#challenge3Input{
+  position: fixed;
+  top: 12vh;
+  left: 42.25vw;
+  font-size: 1vw;
+  width: 15.5vw;
+  text-align: center;
+  z-index: 10;
+}
+
+#canvas{
+  width: 97.5vw;
+  height: 88vh;
+  border: 5px solid black;
+  /*overflow: auto;*/
+}
 
 /**********************************************          Challenge3 End          **********************************************/
 
