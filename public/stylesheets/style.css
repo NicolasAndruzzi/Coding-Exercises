@@ -296,12 +296,94 @@
 
 /**********************************************          Challenge6 Begin          **********************************************/
 
+#challenge6Container{
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#challenge6Title{
+  font-size: 6vw;
+  margin-bottom: 1vh;
+}
+
+#challenge6Title2{
+  font-size: 5vw;
+  margin-bottom: 1vh;
+  -moz-user-select: auto;
+  -webkit-user-select: auto;
+  -ms-user-select: auto;
+}
+
+#challenge6Tag{
+  font-size: 3vw;
+  margin-bottom: 2vh;
+}
+
+#challenge6Container input{
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 1vh;
+}
+
+#challenge6English{
+  margin-top: 2vh;
+  color: darkgreen;
+  font-size: 2vw;
+}
 
 
 /**********************************************          Challenge6 End          **********************************************/
 
 /**********************************************          Challenge7 Begin          **********************************************/
 
+#challenge7Container{
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
 
+#challenge7Container iframe{
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+#challenge7Title{
+  font-size: 6vw;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+}
+
+#challenge7Tag{
+  font-size: 3vw;
+}
+
+#challenge7Container input{
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 1vh;
+}
+
+#challenge7English{
+  margin-top: 2vh;
+  color: darkgreen;
+  font-size: 4vw;
+}
 
 /**********************************************          Challenge7 End          **********************************************/

@@ -7,3 +7,10 @@
       <div class="link"><a href="/#/"><span id="home">{o,o}</span></a></div>
       <div class="link"><a href="/#/challenge7">Fibonacci<span id="bonus">(bonus)</span></a></div>
 </header>
+<div id="challenge6Container">
+  <div id="challenge6Title">Enter any Roman Numeral from</div>
+  <div id="challenge6Title2">I to MMMMCMXCIX</div>
+  <div id="challenge6Tag">(1 - 4,999)</div>
+  <input type="text" name="input" ng-model="inputValueRoman" ng-change="change(inputValueRoman)" placeholder="Roman Numeral">
+  <div id="challenge6English">{{change(inputValueRoman)}}</div>
+</div>
