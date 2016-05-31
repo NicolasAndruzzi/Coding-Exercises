@@ -196,11 +196,25 @@
   justify-content: center;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  background: url("/images/giphy-2.gif") no-repeat center center;
+  background-size: cover;
+  background-color: #09171E;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;*/
 }
 
 #challenge1Title{
-  font-size: 6vw;
+  font-size: 8vw;
   margin-bottom: 1vh;
+  color: white;
+  text-shadow: 0 0 100px black;
+}
+
+#challenge1Title2{
+  font-size: 5vw;
+  margin-bottom: 5vh;
+  color: white;
+  text-shadow: 0 0 50px black;
 }
 
 #challenge1Container input{
@@ -209,10 +223,17 @@
   margin-bottom: 1vh;
 }
 
+#value {
+  margin-top: 6vh;
+  color: white;
+  margin-bottom: 2vh;
+}
+
 #challenge1English{
   margin-top: 2vh;
   color: darkgreen;
   font-size: 2vw;
+  text-shadow: 0 0 5px black;
 }
 
 
@@ -233,17 +254,28 @@
   justify-content: center;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  background: url("/images/Superimposition.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: #09171E;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;*/
 }
 
 #challenge2Title{
   font-size: 6vw;
-  margin-bottom: 1vh;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  color: white;
+  text-shadow: 0 0 5px black;
 }
 
 #challenge2English{
-  margin-top: 2vh;
+  margin-top: 3vh;
   color: darkgreen;
-  font-size: 2vw;
+  font-size: 1.5vw;
+  font-weight: 900;
+  text-shadow: 0 0 50px black;
+  /*background-color: gainsboro;*/
 }
 
 
@@ -261,6 +293,11 @@
   top: 10vh;
   width: 100vw;
   height: 90vh;
+  background: url("/images/About-Around-Textures-Backgrounds-Spiral-District--5694.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: #09171E;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;*/
 }
 
 #challenge3Input{

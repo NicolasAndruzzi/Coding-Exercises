@@ -45,7 +45,7 @@ app.controller("challenge3Controller", function($scope){
       $scope.inputValueSpiral = 0;
     }
 
-    ctx.fillStyle = "darkgreen";
+    ctx.fillStyle = "white";
     ctx.textAlign = "center";
     ctx.fillText("0", canvas.width/2, canvas.height/2);
 

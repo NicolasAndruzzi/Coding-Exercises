@@ -8,8 +8,9 @@
       <div class="link"><a href="/#/challenge7">Fibonacci<span id="bonus">(bonus)</span></a></div>
 </header>
 <div id="challenge1Container">
-  <div id="challenge1Title">Type in any value less than 10 trillion:</div>
+  <div id="challenge1Title">Let Talk Money</div>
+  <div id="challenge1Title2">Type in any value less than 10 trillion</div>
   <input type="number" name="input" ng-model="inputValue" ng-maxlength="17" ng-trim="true" placeholder="0">
-  <div class="">({{inputValue | currency}})</div>
+  <div id="value">({{inputValue | currency}})</div>
   <div id="challenge1English">{{convert(inputValue)}}</div>
 </div>
