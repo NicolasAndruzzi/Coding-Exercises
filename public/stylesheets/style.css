@@ -345,24 +345,36 @@
   justify-content: center;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  background: url("/images/image.jpg") no-repeat center center;
+  background-size: contain;
+  background-color: #1B1716;
+  font-weight: 900;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;*/
 }
 
 #challenge6Title{
-  font-size: 6vw;
+  font-size: 5vw;
   margin-bottom: 1vh;
+  color: white;
+  text-shadow: 0 0 5px black;
 }
 
 #challenge6Title2{
-  font-size: 5vw;
+  font-size: 2vw;
   margin-bottom: 1vh;
+  color: white;
   -moz-user-select: auto;
   -webkit-user-select: auto;
   -ms-user-select: auto;
+  text-shadow: 0 0 5px black;
 }
 
 #challenge6Tag{
-  font-size: 3vw;
+  font-size: 2vw;
   margin-bottom: 2vh;
+  color: white;
+  text-shadow: 0 0 5px black;
 }
 
 #challenge6Container input{
@@ -373,8 +385,9 @@
 
 #challenge6English{
   margin-top: 2vh;
-  color: darkgreen;
-  font-size: 2vw;
+  color: gainsboro;
+  text-shadow: 0 0 5px black;
+  font-size: 5vw;
 }
 
 
@@ -394,6 +407,13 @@
   justify-content: flex-start;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  background: url("/images/goldenSpiral.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: black;
+  font-weight: 900;
+  color: white;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;*/
 }
 
 #challenge7Container iframe{
@@ -405,10 +425,12 @@
   font-size: 6vw;
   margin-bottom: 1vh;
   margin-top: 2vh;
+  text-shadow: 0 0 5px black;
 }
 
 #challenge7Tag{
   font-size: 3vw;
+  text-shadow: 0 0 5px black;
 }
 
 #challenge7Container input{
@@ -419,7 +441,8 @@
 
 #challenge7English{
   margin-top: 2vh;
-  color: darkgreen;
+  color: gainsboro;
+  text-shadow: 0 0 5px black;
   font-size: 4vw;
 }
 

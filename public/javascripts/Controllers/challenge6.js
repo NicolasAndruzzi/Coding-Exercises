@@ -5,6 +5,7 @@ app.controller("challenge6Controller", function($scope){
 $scope.inputValueRoman = "";
 
   $scope.change = function (romanString){
+
     var value = 0;
     var romanArray = [];
 
