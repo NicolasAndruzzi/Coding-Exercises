@@ -271,10 +271,11 @@
 
 #challenge2English{
   margin-top: 3vh;
-  color: darkgreen;
+  color: red;
   font-size: 1.5vw;
   font-weight: 900;
   text-shadow: 0 0 50px black;
+  opacity: .9;
   /*background-color: gainsboro;*/
 }
 
