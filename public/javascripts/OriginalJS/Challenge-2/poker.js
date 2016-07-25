@@ -6,7 +6,7 @@
 // Hand: Kh Kc 3s 3h 2d (2 Pair)
 // Hand: Kh Qh 6h 2h 9h (Flush)
 
-var input = ['Jack-Spades', 'Queen-Spades', '10-Spades', 'King-Spades', '9-Spades'];
+var input = ['Jack-Spades', 'Jack-Spades', '10-Spades', 'King-Spades', 'Jack-Spades'];
 
 var cardValues = {
     Ace:14,
@@ -54,6 +54,8 @@ function rank (hand) {
 
   handValues.forEach(function(x) { duplicateValues[x] = (duplicateValues[x] || 0)+1; });
   handSuits.forEach(function(x) { duplicateSuits[x] = (duplicateSuits[x] || 0)+1; });
+
+  console.log(duplicateValues);
 
   var p = 0;
   var t = 0;

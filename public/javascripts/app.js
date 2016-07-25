@@ -1,4 +1,4 @@
-var app = angular.module('crownPeak', ['ngRoute'])
+var app = angular.module('codingChallenges', ['ngRoute'])
 
 app.config(function($routeProvider) {
   $routeProvider
