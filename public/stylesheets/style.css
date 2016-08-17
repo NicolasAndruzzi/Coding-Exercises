@@ -99,15 +99,6 @@
   transition: all .25s;
 }
 
-#mainHeader .link a:hover #bonus{
-  display: none;
-}
-
-#bonus{
-  margin-top: -.8vw;
-  font-size: 2vw;
-}
-
 #home{
   font-family: 'Permanent Marker', cursive;
   font-weight: 100;
