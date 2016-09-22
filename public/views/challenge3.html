@@ -1,13 +1,14 @@
 <header id="mainHeader">
-      <div class="link"><a href="/#/challenge1">Challenge 1</a></div>
-      <div class="link"><a href="/#/challenge2">Challenge 2</a></div>
-      <div class="link"><a href="/#/"><span id="home">{o,o}</span></a></div>
-      <!-- <div class="link"><a href="/#/challenge4">Challenge 4</a></div> -->
-      <!-- <div class="link"><a href="/#/challenge5">Challenge 5</a></div> -->
-      <div class="link"><a href="/#/challenge6">Challenge 4</a></div>
-      <div class="link"><a href="/#/challenge7">Challenge 5</a></div>
+  <div class="link"><a href="/#/challenge1">Challenge 1</a></div>
+  <div class="link"><a href="/#/challenge2">Challenge 2</a></div>
+  <div class="link"><a href="/#/"><span id="home">{o,o}</span></a></div>
+  <div class="link"><a href="/#/challenge4">Challenge 4</a></div>
+  <div class="link"><a href="/#/challenge5">Challenge 5</a></div>
 </header>
-<div id="challenge3Container">
-  <input type="number" id="challenge3Input" ng-model="inputValueSpiral" ng-trim="true" placeholder="Enter a number from 0 - 50,0000" ng-change="change(inputValueSpiral)">
-  <canvas id="canvas"></canvas>
+<div id="challenge1Container">
+  <div id="challenge1Title">Let's Talk Money</div>
+  <div id="challenge1Title2">Type in any value less than 10 trillion</div>
+  <input type="number" name="input" ng-model="inputValue" ng-maxlength="17" ng-trim="true" placeholder="0">
+  <div id="value">({{inputValue | currency}})</div>
+  <div id="challenge1English">{{convert(inputValue)}}</div>
 </div>

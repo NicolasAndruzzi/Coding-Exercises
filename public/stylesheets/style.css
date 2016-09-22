@@ -130,12 +130,15 @@
 }
 
 #heroMessage{
-  margin-top: 15vh;
+  margin-top: 8.5vh;
   text-shadow: 0 0 50px black;
+  text-align: center;
   color: white;
-  font-size: 15vw;
+  font-size: 10vw;
   font-family: 'Amatic SC', cursive;
-  letter-spacing: 2vw;
+  letter-spacing: 1vw;
+  word-spacing: 1vw;
+  line-height: 20vh;
 }
 
 #heroTag{

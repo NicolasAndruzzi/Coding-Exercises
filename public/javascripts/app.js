@@ -18,21 +18,13 @@ app.config(function($routeProvider) {
       templateUrl: 'views/challenge3.html',
       controller: 'challenge3Controller'
     })
-    // .when('/challenge4', {
-    //   templateUrl: 'views/challenge4.html',
-    //   controller: 'challenge4Controller'
-    // })
-    // .when('/challenge5', {
-    //   templateUrl: 'views/challenge5.html',
-    //   controller: 'challenge5Controller'
-    // })
-    .when('/challenge6', {
-      templateUrl: 'views/challenge6.html',
-      controller: 'challenge6Controller'
+    .when('/challenge4', {
+      templateUrl: 'views/challenge4.html',
+      controller: 'challenge4Controller'
     })
-    .when('/challenge7', {
-      templateUrl: 'views/challenge7.html',
-      controller: 'challenge7Controller'
+    .when('/challenge5', {
+      templateUrl: 'views/challenge5.html',
+      controller: 'challenge5Controller'
     })
     .when('/404error', {
       templateUrl: 'views/404error.html',
