@@ -1,27 +1,60 @@
 app.controller("challenge2Controller", function($scope){
   console.log("challenge2Controller");
 
-  // Will calculate any number in the fibonacci sequence that is sooner than the 1477th position
+  // The input must be in the range of 1 - 4999, or I to MMMMCMXCIX
+$scope.inputValueRoman = "";
 
-  // var inputIndex = 2;
+  $scope.change = function (romanString){
 
-  $scope.inputValueFibonacci = 0;
-  $scope.change = function (desiredIndex) {
-    if ($scope.inputValueFibonacci > 1476) {
-      $scope.inputValueFibonacci = 0;
+    var value = 0;
+    var romanArray = [];
+
+    romanArray = romanString.toUpperCase().split("")
+    romanArray.forEach(function(x,i,a){
+      if(a[i] === "M"){
+        a[i] = 1000;
+      }
+      else if(a[i] === "D"){
+        a[i] = 500;
+      }
+      else if(a[i] === "C"){
+        a[i] = 100;
+      }
+      else if(a[i] === "L"){
+        a[i] = 50;
+      }
+      else if(a[i] === "X"){
+        a[i] = 10;
+      }
+      else if(a[i] === "V"){
+        a[i] = 5;
+      }
+      else if(a[i] === "I"){
+        a[i] = 1;
+      }
+    })
+    for (var i = 0; i < romanArray.length; i++){
+      if(romanArray[i] > romanArray[i+1]){
+        value = value + romanArray[i];
+      }
+      else if(romanArray[i] < romanArray[i+1]){
+        value = value + (romanArray[i+1] - romanArray[i]);
+        i++
+      }
+      else if(romanArray[i] === romanArray[i+1]){
+        value = value + romanArray[i];
+      }
+      else if(romanArray[i+1] === undefined){
+        value = value + romanArray[i];
+      }
     }
+    return(value);
+  }
 
-    fibonacciSequnce = [0,1];
 
-    for (var i = 0; i < desiredIndex; i++) {
-      fibonacciSequnce[i+2] = fibonacciSequnce[i]+fibonacciSequnce[i+1]
-    }
-    return fibonacciSequnce[desiredIndex]
-  };
 
-  // console.time('time');
-  // console.log(fibonacci(inputIndex));
-  // console.timeEnd('time');
+
+  // console.log(fromRoman("MMMMCMXCIX"));
 
 
 });
